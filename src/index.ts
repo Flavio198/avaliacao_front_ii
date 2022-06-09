@@ -144,5 +144,9 @@ function logarNoSistema(usuarioLogando: any) {
     }
 
     sessionStorage.setItem('usuarioLogado', inputLoginEmail.value);
+    
+
+    //FALTA REFATORAR O ALERT
+    alert(`Olá ${usuarioLogando}! Organize suas tarefas e aproveite bem o seu dia ;)`)
     window.location.href = 'home.html';
 }
