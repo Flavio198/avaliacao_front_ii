@@ -43,7 +43,7 @@ function verificaCamposCadastro() {
         nome: inputCadastroNome.value,
         login: inputCadastroEmail.value,
         senha: inputCadastroSenha.value,
-        tarefas: []
+        lembretes: []
     };
     cadastrarUsuario(novoUsuario);
 }
@@ -108,6 +108,6 @@ function logarNoSistema(usuarioLogando) {
     }
     sessionStorage.setItem('usuarioLogado', inputLoginEmail.value);
     //FALTA REFATORAR O ALERT
-    alert(`Olá ${usuarioLogando}! Organize suas tarefas e aproveite bem o seu dia ;)`);
+    alert(`Olá ${usuarioLogando}! Nunca mais esqueça das coisas importantes. Agora você pode registrar os seus lembretes;)`);
     window.location.href = 'home.html';
 }
